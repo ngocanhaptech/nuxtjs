@@ -1,7 +1,6 @@
 <template>
   <div class="container-main justify-content-center align-items-center text-center">
     <div>
-      <logo />
       <h1 class="title">
         Index page
       </h1>
@@ -12,16 +11,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
 
 <style>
 .text-center {
