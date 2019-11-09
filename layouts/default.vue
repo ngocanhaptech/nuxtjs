@@ -3,7 +3,7 @@
     <div class="top flex justify-between items-center">Top content</div>
     <div class="header">
       <div class="container flex">
-        <nav />
+        <navigation />
       </div> <!-- /.container -->
     </div>
     <nuxt />
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import Nav from '@/components/Navigation'
+import Navigation from '@/components/Navigation'
 export default {
   components: {
-    Nav
+    Navigation
   }
 }
 </script>
