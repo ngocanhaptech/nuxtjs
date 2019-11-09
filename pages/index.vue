@@ -12,6 +12,18 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'Home page',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Home page descriptions ' }
+      ]
+    }
+  }
+}
+</script>
 <style>
 .text-center {
   text-align: center;
