@@ -3,20 +3,7 @@
     <div class="top flex justify-between items-center">Top content</div>
     <div class="header">
       <div class="container flex">
-        <ul class="navigation">
-          <li>
-            <nuxt-link to="/">Home</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/about">About</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/team">Team</nuxt-link>
-          </li>     
-          <li>
-            <nuxt-link to="/blog">Blog</nuxt-link>
-          </li>   
-        </ul><!-- /.navigation -->
+        <nav />
       </div> <!-- /.container -->
     </div>
     <div class="container flex">
@@ -36,6 +23,14 @@
     </div>
   </div>
 </template>
+<script>
+import Nav from '@/components/Navigation'
+export default {
+  components: {
+    Nav
+  }
+}
+</script>
 
 <style>
 .main { 
