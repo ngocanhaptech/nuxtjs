@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        homesite index page
+        Index page
       </h1>
       <h2 class="subtitle">
         BizFlyCloud stop innovation.
