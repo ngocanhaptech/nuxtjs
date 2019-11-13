@@ -4,7 +4,6 @@
     <header-component>
       <navigation />
     </header-component>
-    <mega />
     <nuxt />
   </div>
 </template>
@@ -13,7 +12,6 @@
 import Logo from '@/components/Logo'
 import Top from '@/components/Top'
 import HeaderComponent from '@/components/Header'
-import Mega from '@/components/Mega'
 import Navigation from '@/components/Navigation'
 
 export default {
@@ -21,7 +19,6 @@ export default {
     Logo,
     Top,
     HeaderComponent,
-    Mega,
     Navigation
   },
   mounted () {
@@ -36,9 +33,12 @@ export default {
         { rel: 'stylesheet', href: 'css/style.css' }
       ],
       script: [
-        { src: 'js/jquery-2.1.1.js' },
-        { src: 'js/jquery.mobile.custom.min.js' },
-        { src: 'js/modernizr.js' },
+        { src: 'js/jquery-2.1.1.js', rel: 'preload' },
+        { src: 'js/jquery.mobile.custom.min.js', rel: 'preload' },
+        { src: 'js/modernizr.js', rel: 'preload' },
+        { src: 'js/jquery-2.1.1.js', body: true },
+        { src: 'js/jquery.mobile.custom.min.js', body: true },
+        { src: 'js/modernizr.js', body: true },
         // Mega menu
         { src: 'js/main.js', rel: 'preload' },
         { src: '', body: true, id: 'mega_menu_main_js' }
