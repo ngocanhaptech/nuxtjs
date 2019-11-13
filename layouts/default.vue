@@ -33,12 +33,12 @@ export default {
         { rel: 'stylesheet', href: 'css/style.css' }
       ],
       script: [
-        { src: 'js/jquery-2.1.1.js', rel: 'preload' },
-        { src: 'js/jquery.mobile.custom.min.js', rel: 'preload' },
-        { src: 'js/modernizr.js', rel: 'preload' },
-        { src: 'js/jquery-2.1.1.js', body: true },
-        { src: 'js/jquery.mobile.custom.min.js', body: true },
-        { src: 'js/modernizr.js', body: true },
+        // { src: 'js/jquery-2.1.1.js', rel: 'preload' },
+        // { src: 'js/jquery-2.1.1.js', body: true },
+        // { src: 'js/jquery.mobile.custom.min.js', rel: 'preload' },
+        // { src: 'js/jquery.mobile.custom.min.js', body: true },
+        // { src: 'js/modernizr.js', rel: 'preload' },
+        // { src: 'js/modernizr.js', body: true },
         // Mega menu
         { src: 'js/main.js', rel: 'preload' },
         { src: '', body: true, id: 'mega_menu_main_js' }
