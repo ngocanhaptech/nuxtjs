@@ -103,10 +103,98 @@ ul, ol {
 .navigation li {
   display: inline-block;
 }
-
 .navigation li a {
   display: inline-block;
   padding: 5px 12px;
+  text-transform: uppercase;
+  color: #35495e;
+  font-weight: 500;
+}
+.navigation > li > a{
+  padding: 20px 12px;
+}
+.navigation li a svg {
+  transition: all ease .3s;
+}
+.navigation li:hover a,
+.navigation li:focus a,
+.navigation li:active a ,
+.navigation li.active a{
+  color: #3fddfe;
+}
+.navigation li:hover a svg path,
+.navigation li:focus a svg path,
+.navigation li:active a svg path ,
+.navigation li.active a svg path{
+  fill: #3fddfe !important;
+}
+.navigation li:hover a svg,
+.navigation li:focus a svg,
+.navigation li:active a svg ,
+.navigation li.active a svg{
+  transform: rotate(-180deg);
+}
+.navigation li {
+  position: relative;
+}
+.navigation li .sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 220px;
+}
+.navigation li .sub-menu {
+  padding-top: 2rem;
+  pointer-events: none;
+  box-shadow: rgba(67, 90, 111, 0.416) 0px 0px 1px, rgba(67, 90, 111, 0.3) 0px 2px 4px -2px;
+  position: absolute;    
+  right: 0;
+  left: auto;
+  top: 4.5rem;
+  z-index: 10;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: all 250ms ease-in-out 0s;
+}
+.navigation li:hover .sub-menu {
+  opacity: 1;
+  top: 100%;
+}
+.navigation li .sub-menu::before {
+  content: '';
+  width: .8rem;
+  height: .8rem;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -0.4rem;
+  right: 50px;
+  box-shadow: rgba(67,90,111,0.1) -1px -1px 1px;
+}
+.navigation li .sub-menu li {
+  width: 240px;
+  padding: 15px 25px;
+  border-bottom: 1px solid #efefef;
+}
+.navigation li .sub-menu li .text {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #35495e;
+}
+.navigation li .sub-menu li .text svg {
+  margin-right: 5px;
+  fill: #4c757b;
+}
+.navigation li .sub-menu li .des {
+  font-size:small;
+}
+@media (min-width: 1175px) {
+  .navigation li .sub-menu {
+    width: 720px;
+  }
 }
 /* SIDEBAR */
 .sidebar {
