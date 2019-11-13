@@ -22,10 +22,10 @@ export default {
     Navigation
   },
   mounted () {
-    const scriptMain = document.getElementById('mega_menu_main_js')
-    setTimeout(() => {
-      scriptMain && scriptMain.setAttribute('src', 'js/main.js')
-    }, 3000)
+    // const scriptMain = document.getElementById('mega_menu_main_js')
+    // setTimeout(() => {
+    //   scriptMain && scriptMain.setAttribute('src', 'js/main.js')
+    // }, 3000)
   },
   head () {
     return {
@@ -40,8 +40,8 @@ export default {
         // { src: 'js/modernizr.js', rel: 'preload' },
         // { src: 'js/modernizr.js', body: true },
         // Mega menu
-        { src: 'js/main.js', rel: 'preload' },
-        { src: '', body: true, id: 'mega_menu_main_js' }
+        // { src: 'js/main.js', rel: 'preload' },
+        // { src: '', body: true, id: 'mega_menu_main_js' }
       ]
     }
   },

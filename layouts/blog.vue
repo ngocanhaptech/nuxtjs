@@ -1,11 +1,9 @@
 <template>
   <div>
-    <div class="top flex justify-between items-center">Top content</div>
-    <div class="header">
-      <div class="container flex">
-        <navigation />
-      </div> <!-- /.container -->
-    </div>
+    <top />
+    <header-component>
+      <navigation />
+    </header-component>
     <div class="container flex">
         <main class="main">
             <nuxt />
@@ -24,6 +22,8 @@
   </div>
 </template>
 <script>
+import Top from '@/components/Top'
+import HeaderComponent from '@/components/Header'
 import Navigation from '@/components/Navigation'
 export default {
   head () {
@@ -34,6 +34,8 @@ export default {
     }
   },
   components: {
+    Top,
+    HeaderComponent,
     Navigation
   }
 }
