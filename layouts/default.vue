@@ -1,80 +1,51 @@
 <template>
   <div>
-    <div class="top flex justify-between items-center">Top content</div>
-    <div class="header">
-      <div class="container flex">
-        <navigation />
-      </div> <!-- /.container -->
-    </div>
+    <top />
+    <header-component>
+      <navigation />
+    </header-component>
+    <mega />
     <nuxt />
   </div>
 </template>
 
 <script>
+import Logo from '@/components/Logo'
+import Top from '@/components/Top'
+import HeaderComponent from '@/components/Header'
+import Mega from '@/components/Mega'
 import Navigation from '@/components/Navigation'
+
 export default {
   components: {
+    Logo,
+    Top,
+    HeaderComponent,
+    Mega,
     Navigation
-  }
+  },
+  mounted () {
+    const scriptMain = document.getElementById('mega_menu_main_js')
+    setTimeout(() => {
+      scriptMain && scriptMain.setAttribute('src', 'js/main.js')
+    }, 3000)
+  },
+  head () {
+    return {
+      link: [
+        { rel: 'stylesheet', href: 'css/style.css' }
+      ],
+      script: [
+        { src: 'js/jquery-2.1.1.js' },
+        { src: 'js/jquery.mobile.custom.min.js' },
+        { src: 'js/modernizr.js' },
+        // Mega menu
+        { src: 'js/main.js', rel: 'preload' },
+        { src: '', body: true, id: 'mega_menu_main_js' }
+      ]
+    }
+  },
+  // Scroll to the top before rendering the page
+  scrollToTop: true
 }
 </script>
-
-<style>
-.navigation { 
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.navigation li {
-  display: inline-block;
-}
-.navigation li a{
-  display: inline-block;
-  padding: 5px 12px;
-}
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-.flex {
-  display: flex;
-}
-.justify-between {
-  justify-content: center;
-}
-.items-center {
-  align-items: center;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-body {
-  padding-top: 35px;
-}
-.top {
-  border-bottom: 1px solid #eaeaea;
-  min-height: 34px;
-  background: #35495e;
-  color: #ccc; 
-  padding: 0 15px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-</style>

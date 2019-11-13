@@ -1,0 +1,102 @@
+.logo svg {
+  min-width: 150px;
+  margin: 5px 15px;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a {
+  display: inline-block;
+  padding: 5px 12px;
+}
+
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.top {
+  border-bottom: 1px solid #eaeaea;
+  min-height: 34px;
+  background: #35495e;
+  color: #ccc;
+  padding: 0 15px;
+}
+.text-center {
+  text-align: center;
+}
+.container-main {
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
