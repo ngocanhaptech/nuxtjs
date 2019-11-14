@@ -5,7 +5,7 @@
         Index page
       </h1>
       <h2 class="subtitle">
-        BizFlyCloud stop innovation.
+        BizFlyCloud none stop innovation.
       </h2>
       <div class="content">Content home page</div>
     </div>
