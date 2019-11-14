@@ -45,6 +45,8 @@ ul, ol {
 .container-main {
   margin: 0 auto;
   min-height: calc(100vh - 80px);
+  min-width: calc(100% - 220px);
+  border-right: 1px dashed #eaeaea;
   display: flex;
 }
 .justify-content-center {
@@ -200,3 +202,11 @@ ul, ol {
 .sidebar {
   min-width: 220px;
 }
+.sidebar ul{
+  list-style: none;
+}
+.sidebar ul li{
+  padding: 6px 12px;
+}
+
+
